@@ -180,7 +180,6 @@ const factory = (Input) => {
         <li
           key={idx}
           className={className}
-          onMouseDown={!item.disabled}
           onClick={this.handleSelect.bind(this, item[valueKey])}        
         >
           {this.props.template ? this.props.template(item) : item[labelKey]}
